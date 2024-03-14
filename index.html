@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cvećara</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <label for="cveće">Odaberite cveće:</label> <br>
+        <input type="number" name= 'cveće' id="ruže" placeholder="Cena po cvetu je 150din">Ruže <br>
+        <input type="number" name= 'cveće' id="ljiljani" placeholder="Cena po cvetu je 120din">Ljiljani <br>      
+        <input type="number" name= 'cveće' id="gerberi" placeholder="Cena po cvetu je 70din">Gerberi <br>
+
+        <label for="pokloni">Dodatni pokloni:</label> <br>
+        <input type="checkbox" id="poklon" name='poklon' value="Bombonjera">Bombonjera <br>
+        <input type="checkbox" id="poklon" name='poklon' value="Čokolada">Čokolada <br>
+        <input type="checkbox" id="poklon" name='poklon' value="Šampanjac">Šampanjac <br>
+
+        <label for="plaćanje">Plaćanje:</label> <br>
+        <input type="radio" name="plaćanje" id="keš" value="keš" checked> Keš <br>
+        <input type="radio" name="plaćanje" id="kartica" value="kartica"> Kartica <br>
+
+        <input class="dugme" type="button" id="izračunaj" value="Izračunaj">
+        <input type="reset" value="Resetuj" onClick="window.location.reload()">
+    </form>
+    <h1 id="vašaPorudžbina"></h1>
+    <table id="tabela">
+        <tr id="red1">
+        </tr>
+        <tr id="red2">
+        </tr>
+        <tr id="red3">
+        </tr>
+    </table>
+    <div>
+        <p id="ispispoklona"></p>
+    </div>
+    <div id="ispiscene">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
